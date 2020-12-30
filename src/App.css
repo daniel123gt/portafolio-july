@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
+.logo-img{
+  width: 65px;
+}
+/* SHOWCASE */
+.showcase-cont{
+  width: 100%;
+  height: 400px;
+  background: url('https://drive.google.com/uc?export=view&id=174pzE_rv6Rxrt-YMW11dCb7FSQSUoDMV') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.showcase-cont h3,h2{
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.25);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.showcase-cont button{
+  width: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.showcase-cont button:hover{
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+.cont-btn-showcase button{
+  margin-right: 20px;
+}
+/* FOOTER */
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 204px;
+}
+
+.foot-social-cont img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.foot-social-cont{
+  display: flex;
+  padding: 10px 0;
+}
+
+/* MODAL HOME */
+
+.modal-home{
+  display: none;
+  position: fixed;
+}
+
+.modal-home-cont{
+  width: 250px;
+  height: 250px;
+  background-color: red;
+}
+
+/* ERROR */
+
+.error-cont{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-cont h2{
+  font-size: 35px;
+}
+
+/* JOBS HOME */
+
+.jobs-home-cont{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.jobs-home-head h3{
+  font-size: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jobs-home-foot a{
+  color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 30px;
+}
+
+.jobs-home-foot a:hover{
+  transition: 300ms;
+  color: #9575cd80;
+  text-shadow: 0 0 2px #9575cda1;
+  background-color: #9575cd0a;
+}
+
+/* NAVBAR */
+
+.navbar-ul li a{
+  color: #666666;
+}
+
+.navbar-ul li a:hover{
+  transition: 300ms;
+  color: #9575cd60;
+  text-shadow: 0 0 2px #9575cda1;
+  background-color: #9575cd07;
+}
+
+/* APP */
+
+.app{
+  position: relative;
+  min-height: 100vh;
+}
+
+/* MAIN */
+
+.main{
+  padding-bottom: 204px;
+}
+
+/* FORM CONTACT */
+
+.form-contact-cont{
+  margin-top: 20px;
+  background-color: #fafafa;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  padding: 30px 0 0 0;
+}
+
+input{
+  height: 38px !important;
+}
+
+input:focus{
+  border-bottom: 1px solid #9575cd !important;
+  border-radius: 3px !important;
+  box-shadow: 0 1px 0 0 #9575cd33 !important;
+}
+
+textarea:focus{
+  border-bottom: 1px solid #9575cd !important;
+  border-radius: 3px !important;
+  box-shadow: 0 1px 0 0 #9575cd33 !important;
+}
+
+label{
+  color: #666666 !important;
+}
+
+label::after{
+  background-color: red !important;
+}
+
+.input-field .prefix.active{
+  color: #9575cd !important;
+}
+
+.send-mail-img{
+  max-width: 220px;
+}
+
+.send-mail-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-mail-right h4{
+  font-size: 20px;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.btn-send-mail{
+  width: 200px;
+}
+
+.btn-send-mail:hover{
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+/* THANJS */
+
+.thanks-modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+  padding-top: 190px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.thanks-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+  background-color: #fafafa;
+  padding: 20px 20px 20px 20px;
+}
+
+.thanks-cont h2{
+  font-size: 28px;
+  margin: 0;
+}
+
+.thanks-cont p{
+  font-size: 25px;
+}
+
+.thanks-head{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thanks-head i{
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* PRONTO */
+
+.pronto-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
